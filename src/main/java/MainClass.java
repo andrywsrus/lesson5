@@ -11,7 +11,7 @@ public class MainClass {
     static CountDownLatch finishLine = new CountDownLatch(CARS_COUNT);
 
     public static void main(String[] args) {
-        System.out.println("¬¿∆ÕŒ≈ Œ¡⁄ﬂ¬À≈Õ»≈ >>> œÓ‰„ÓÚÓ‚Í‡!!!");
+        System.out.println("–í–ê–ñ–ù–û–ï –û–ë–™–Ø–í–õ–ï–ù–ò–ï >>> –ü–æ–¥–≥–æ—Ç–æ–≤–∫–∞!!!");
         Race race = new Race(new Road(60), new Tunnel(), new Road(40));
         Car[] cars = new Car[CARS_COUNT];
         for (int i = 0; i < cars.length; i++) {
@@ -20,19 +20,19 @@ public class MainClass {
         for (int i = 0; i < cars.length; i++) {
             new Thread(cars[i]).start();
         }
-        while (startLine.getCount() > 0) //œÓ‚ÂˇÂÏ, ÒÓ·‡ÎËÒ¸ ÎË ‚ÒÂ ‡‚ÚÓÏÓ·ËÎË
+        while (startLine.getCount() > 0) //–ü—Ä–æ–≤–µ—Ä—è–µ–º, —Å–æ–±—Ä–∞–ª–∏—Å—å –ª–∏ –≤—Å–µ –∞–≤—Ç–æ–º–æ–±–∏–ª–∏
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        System.out.println("¬¿∆ÕŒ≈ Œ¡⁄ﬂ¬À≈Õ»≈ >>> √ÓÌÍ‡ Ì‡˜‡Î‡Ò¸!!!");
-        while (finishLine.getCount() > 0) //œÓ‚ÂˇÂÏ, ‚ÒÂ ÎË ÔÓÂı‡ÎË ÙËÌ‡Î¸ÌÛ˛ ‰ËÒÚ‡ÌˆË˛
+        System.out.println("–í–ê–ñ–ù–û–ï –û–ë–™–Ø–í–õ–ï–ù–ò–ï >>> –ì–æ–Ω–∫–∞ –Ω–∞—á–∞–ª–∞—Å—å!!!");
+        while (finishLine.getCount() > 0) //–ü—Ä–æ–≤–µ—Ä—è–µ–º, –≤—Å–µ –ª–∏ –ø—Ä–æ–µ—Ö–∞–ª–∏ —Ñ–∏–Ω–∞–ª—å–Ω—É—é –¥–∏—Å—Ç–∞–Ω—Ü–∏—é
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        System.out.println("¬¿∆ÕŒ≈ Œ¡⁄ﬂ¬À≈Õ»≈ >>> √ÓÌÍ‡ Á‡ÍÓÌ˜ËÎ‡Ò¸!!!");
+        System.out.println("–í–ê–ñ–ù–û–ï –û–ë–™–Ø–í–õ–ï–ù–ò–ï >>> –ì–æ–Ω–∫–∞ –∑–∞–∫–æ–Ω—á–∏–ª–∞—Å—å!!!");
     }
 }

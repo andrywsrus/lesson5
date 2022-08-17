@@ -3,15 +3,15 @@ import java.util.concurrent.BrokenBarrierException;
 public class Road extends Stage {
     Road(int length) {
         this.length = length;
-        this.description = "Дорога " + length + " метров";
+        this.description = "Р”РѕСЂРѕРіР° " + length + " РјРµС‚СЂРѕРІ";
     }
     @Override
     public void go(Car c) {
         try {
-            System.out.println(c.getName() + " начал этап: " + description);
+            System.out.println(c.getName() + " РЅР°С‡Р°Р» СЌС‚Р°Рї: " + description);
             Thread.sleep(length / c.getSpeed() * 1000);
             MainClass.roadStage.await();
-            System.out.println(c.getName() + " закончил этап: " + description);
+            System.out.println(c.getName() + " Р·Р°РєРѕРЅС‡РёР» СЌС‚Р°Рї: " + description);
             if(this.length == 40) {
                 MainClass.finishLine.countDown();
             }
