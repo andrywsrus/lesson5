@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/Car.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/MainClass.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/Road.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Stage.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/Tunnel.java" charset="UTF-8" />
   </component>
 </project>
